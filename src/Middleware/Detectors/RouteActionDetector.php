@@ -33,6 +33,6 @@ class RouteActionDetector implements Detector
     {
         $action = Config::get('localized-routes.route_action');
 
-        return $this->route->getAction($action);
+        return $this->route?->getAction($action);
     }
 }
